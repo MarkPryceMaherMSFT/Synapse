@@ -1,6 +1,9 @@
+/*
+https://github.com/sasever/SQLPoolsTools
+*/
 DECLARE @run_type varchar(10) ='FULL' /*accepted values: FULL,SCHEMA,TABLE*/
 DECLARE @report_type [varchar](10) = 'INSERT' /*accepted values: CTAS,INSERT*/
-DECLARE @stage_cleanse_type [varchar](10) = 'DROP'/*accepted values: DROP,KEEP*/
+DECLARE @stage_cleanse_type [varchar](10) = 'KEEP'/*accepted values: DROP,KEEP*/
 DECLARE @op_schema_name varchar(100) = 'dbo'
 
 EXEC dbo.[sp_health_check_report]  @run_type, @report_type, @stage_cleanse_type, @op_schema_name, NULL, NULL

@@ -20,9 +20,9 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="_links.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>_links.sql</FullPath>
         </FileNode>
         <FileNode Name="_Whats a DW.sql">
@@ -38,15 +38,15 @@
           <FullPath>0_Bigger_Boat.sql</FullPath>
         </FileNode>
         <FileNode Name="1_table_details.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1_table_details.sql</FullPath>
         </FileNode>
         <FileNode Name="1a_round_robin_distribution.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1a_round_robin_distribution.sql</FullPath>
         </FileNode>
         <FileNode Name="1b_round_robin_test1.sql">
@@ -56,9 +56,9 @@
           <FullPath>1b_round_robin_test1.sql</FullPath>
         </FileNode>
         <FileNode Name="1c_replicated_table.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1c_replicated_table.sql</FullPath>
         </FileNode>
         <FileNode Name="1d_table_advisor.sql">
@@ -152,9 +152,9 @@
           <FullPath>7f_Monitor_Users_and_Resource_Groups.sql</FullPath>
         </FileNode>
         <FileNode Name="7g_useful.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7g_useful.sql</FullPath>
         </FileNode>
         <FileNode Name="8_auditing.sql">
@@ -162,6 +162,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>8_auditing.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8b_import_export.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>8b_import_export.sql</FullPath>
         </FileNode>
         <FileNode Name="9_CCI_Gather.sql">
           <AssociatedConnectionMoniker />
@@ -186,12 +192,6 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>9_sp_Stats_Update.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
