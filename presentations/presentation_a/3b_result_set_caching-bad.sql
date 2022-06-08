@@ -2,9 +2,11 @@
 -- 90 meg of data. 
 
 SELECT name, is_result_set_caching_on FROM sys.databases;
-ALTER DATABASE [tpch] SET RESULT_SET_CACHING off; -- use master
+ALTER DATABASE [oldgen2] SET RESULT_SET_CACHING off; -- use master
+ALTER DATABASE [oldgen2] SET RESULT_SET_CACHING on;
 
-select * from sys.dm_pdw_exec_requests where [label]='supplier test' order by submit_time desc;
+select  total_elapsed_time / 1000 secs, *
+from sys.dm_pdw_exec_requests where [label]='supplier test3' order by submit_time desc;
 
 SELECT name, is_result_set_caching_on FROM sys.databases;
 
@@ -26,5 +28,18 @@ cause performance issue, users should turn OFF result
 set caching on the database before running those types of queries.
 
 */
-select * from [dbo].[supplier] option(label='supplier test3') -- over 5 minutes...
+drop table  dbo.tmp_supplier
+
+create table dbo.tmp_supplier8 with (distribution=round_robin, heap) as
+select top 4000000 * from [dbo].[supplier] option(label='supplier test3') -- over 5 minutes...
+
+select * from tmp_supplier8
+
+select * from  [microsoft].[vw_table_space_summary] where table_name = 'tmp_supplier8'
+
+DBCC PDW_SHOWSPACEUSED('dbo.tmp_supplier2')
+
+
+
+
 

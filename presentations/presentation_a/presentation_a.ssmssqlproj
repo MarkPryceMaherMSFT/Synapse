@@ -3,6 +3,78 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
+        <ConnectionNode Name="csegen2.database.windows.net:sqladminuser">
+          <Created>2022-01-29T11:18:34.8607223+00:00</Created>
+          <Type>SQL</Type>
+          <Server>csegen2.database.windows.net</Server>
+          <UserName>sqladminuser</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="csegen2.database.windows.net:sqladminuser@csegen2">
+          <Created>2022-05-19T14:20:33.0509716+01:00</Created>
+          <Type>SQL</Type>
+          <Server>csegen2.database.windows.net</Server>
+          <UserName>sqladminuser@csegen2</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="csetestws.sql.azuresynapse.net:maprycem@microsoft.com">
+          <Created>2022-01-05T12:29:15.5571815+00:00</Created>
+          <Type>SQL</Type>
+          <Server>csetestws.sql.azuresynapse.net</Server>
+          <UserName>maprycem@microsoft.com</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>gen2</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="mpmdemows.sql.azuresynapse.net:sqladminuser">
+          <Created>2021-11-20T22:26:26.7951073+00:00</Created>
+          <Type>SQL</Type>
+          <Server>mpmdemows.sql.azuresynapse.net</Server>
+          <UserName>sqladminuser</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="tpc-test.sql.azuresynapse.net:jeff">
+          <Created>2021-12-14T16:17:42.9481207+00:00</Created>
+          <Type>SQL</Type>
+          <Server>tpc-test.sql.azuresynapse.net</Server>
+          <UserName>jeff</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>tpch</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="tpc-test.sql.azuresynapse.net:power_ranger">
+          <Created>2021-11-10T14:10:07.4619964+00:00</Created>
+          <Type>SQL</Type>
+          <Server>tpc-test.sql.azuresynapse.net</Server>
+          <UserName>power_ranger</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>tpch</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
         <ConnectionNode Name="tpc-test.sql.azuresynapse.net:sqladminuser">
           <Created>2021-11-02T18:48:27.17939+00:00</Created>
           <Type>SQL</Type>
@@ -19,6 +91,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="_Agenda.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>_Agenda.sql</FullPath>
+        </FileNode>
         <FileNode Name="_links.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
@@ -26,81 +104,111 @@
           <FullPath>_links.sql</FullPath>
         </FileNode>
         <FileNode Name="_Whats a DW.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser@csegen2</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser@csegen2</AssociatedConnUserName>
           <FullPath>_Whats a DW.sql</FullPath>
         </FileNode>
+        <FileNode Name="_Whats new.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>_Whats new.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7z_TimeWarp.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser@csegen2</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser@csegen2</AssociatedConnUserName>
+          <FullPath>7z_TimeWarp.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8g_Copy_into.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>8g_Copy_into.sql</FullPath>
+        </FileNode>
+        <FileNode Name="_Whats_new_Native.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>_Whats_new_Native.sql</FullPath>
+        </FileNode>
         <FileNode Name="0_Bigger_Boat.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>0_Bigger_Boat.sql</FullPath>
         </FileNode>
         <FileNode Name="1_table_details.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1_table_details.sql</FullPath>
         </FileNode>
         <FileNode Name="1a_round_robin_distribution.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1a_round_robin_distribution.sql</FullPath>
         </FileNode>
         <FileNode Name="1b_round_robin_test1.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1b_round_robin_test1.sql</FullPath>
         </FileNode>
         <FileNode Name="1c_replicated_table.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>1c_replicated_table.sql</FullPath>
         </FileNode>
         <FileNode Name="1d_table_advisor.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:jeff</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>jeff</AssociatedConnUserName>
+          <FullPath>1d_table_advisor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="1e_test.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
-          <FullPath>1d_table_advisor.sql</FullPath>
+          <FullPath>1e_test.sql</FullPath>
         </FileNode>
         <FileNode Name="2_Dirty_Reads_Partitions.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>2_Dirty_Reads_Partitions.sql</FullPath>
         </FileNode>
         <FileNode Name="3a_result_set_caching.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:jeff</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
-          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <AssociatedConnUserName>jeff</AssociatedConnUserName>
           <FullPath>3a_result_set_caching.sql</FullPath>
         </FileNode>
         <FileNode Name="3b_result_set_caching-bad.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser@csegen2</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser@csegen2</AssociatedConnUserName>
           <FullPath>3b_result_set_caching-bad.sql</FullPath>
         </FileNode>
         <FileNode Name="4_Material_world.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>4_Material_world.sql</FullPath>
         </FileNode>
         <FileNode Name="4b_Material_world.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>4b_Material_world.sql</FullPath>
         </FileNode>
         <FileNode Name="5_hints.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>5_hints.sql</FullPath>
         </FileNode>
         <FileNode Name="6_Zero_code_ingestion.sql">
@@ -109,34 +217,40 @@
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>6_Zero_code_ingestion.sql</FullPath>
         </FileNode>
+        <FileNode Name="7_Live_Query_stats.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:csegen2.database.windows.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>csegen2.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7_Live_Query_stats.sql</FullPath>
+        </FileNode>
         <FileNode Name="7_Monitoring.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7_Monitoring.sql</FullPath>
         </FileNode>
         <FileNode Name="7a_memory_consumption.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7a_memory_consumption.sql</FullPath>
         </FileNode>
         <FileNode Name="7b_monitor_tempdb.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7b_monitor_tempdb.sql</FullPath>
         </FileNode>
         <FileNode Name="7c_waits.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7c_waits.sql</FullPath>
         </FileNode>
         <FileNode Name="7d_Workload_Managment.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7d_Workload_Managment.sql</FullPath>
         </FileNode>
         <FileNode Name="7e_perf_tuning.sql">
@@ -151,47 +265,101 @@
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>7f_Monitor_Users_and_Resource_Groups.sql</FullPath>
         </FileNode>
-        <FileNode Name="7g_useful.sql">
+        <FileNode Name="7h_queueing_compiling.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
-          <FullPath>7g_useful.sql</FullPath>
+          <FullPath>7h_queueing_compiling.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7i_transactions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7i_transactions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7m_QueryStore_.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7m_QueryStore_.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7p_datatypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7p_datatypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7q_recommendations_stats.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7q_recommendations_stats.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7s_queuing_compilation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>7s_queuing_compilation.sql</FullPath>
         </FileNode>
         <FileNode Name="8_auditing.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>8_auditing.sql</FullPath>
         </FileNode>
         <FileNode Name="8b_import_export.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:power_ranger</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>power_ranger</AssociatedConnUserName>
+          <FullPath>8b_import_export.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8c_monitor_polybase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:mpmdemows.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>mpmdemows.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>8c_monitor_polybase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8e_Export_everything_to_files.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:power_ranger</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>power_ranger</AssociatedConnUserName>
+          <FullPath>8e_Export_everything_to_files.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8f_external_table_example.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>8f_external_table_example.sql</FullPath>
+        </FileNode>
+        <FileNode Name="9_CCI_Gather.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
           <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
-          <FullPath>8b_import_export.sql</FullPath>
-        </FileNode>
-        <FileNode Name="9_CCI_Gather.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
           <FullPath>9_CCI_Gather.sql</FullPath>
         </FileNode>
         <FileNode Name="9_CCI_Update.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>9_CCI_Update.sql</FullPath>
         </FileNode>
         <FileNode Name="9_sp_stats_Gather.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
           <FullPath>9_sp_stats_Gather.sql</FullPath>
         </FileNode>
         <FileNode Name="9_sp_Stats_Update.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:tpc-test.sql.azuresynapse.net:False:sqladminuser</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>tpc-test.sql.azuresynapse.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>sqladminuser</AssociatedConnUserName>
+          <FullPath>9_sp_Stats_Update.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Everybodys shuffling.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>9_sp_Stats_Update.sql</FullPath>
+          <FullPath>Everybodys shuffling.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

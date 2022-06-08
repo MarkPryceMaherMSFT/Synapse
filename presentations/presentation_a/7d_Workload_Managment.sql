@@ -20,9 +20,16 @@ CREATE WORKLOAD CLASSIFIER [wgsmallresource]
 	     WORKLOAD_GROUP = 'smallresource'
        ,MEMBERNAME = 'perftest'
    );
+CREATE WORKLOAD CLASSIFIER [wgsmallresource5]
+   WITH (
+	     WORKLOAD_GROUP = 'smallresource'
+       ,MEMBERNAME = 'power_range'
+   );
 
 
-
-   select count(*), datepart(hr,submit_time) from sys.dm_pdw_exec_requests
-   where submit_time > getdate() - 0.001
-   group by datepart(hr,submit_time)
+   CREATE WORKLOAD GROUP thing2
+   WITH ( 
+       MIN_PERCENTAGE_RESOURCE = 0
+       ,CAP_PERCENTAGE_RESOURCE = 100
+       ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 100
+);

@@ -1,5 +1,6 @@
 /* HINTs */
-
+--https://docs.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-ver15#:~:text=%27FORCE_LEGACY_CARDINALITY_ESTIMATION%27%20Forces%20the%20Query%20Optimizer%20to%20use%20Cardinality,Database%20Scoped%20Configuration%20setting%20LEGACY_CARDINALITY_ESTIMATION%20%3D%20ON.%20%27QUERY_OPTIMIZER_COMPATIBILITY_LEVEL_n%27
+-- https://docs.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver15#examples--and
 select
     l_returnflag,
     l_linestatus,
@@ -25,8 +26,18 @@ order by
 		label='hint test1', 
 		FORCE ORDER, ----- ONLY use when there are lots of tables
 					----- stops the optimizer trying lots of options
-		USE HINT ('FORCE_LEGACY_CARDINALITY_ESTIMATION')
+		USE HINT ('FORCE_LEGACY_CARDINALITY_ESTIMATION'),
 		-- use the old estimation model
-		USE HINT('allow_batch_mode') -- stops plans from going into ROW mode
+		USE HINT('allow_batch_mode'), -- stops plans from going into ROW mode
 		USE HINT('ENABLE_PARALLEL_PLAN_PREFERENCE') 
 		)
+
+
+
+		option(
+		label='hint test1', 
+		FORCE ORDER, ----- ONLY use when there are lots of tables
+					----- stops the optimizer trying lots of options
+		USE HINT ('FORCE_LEGACY_CARDINALITY_ESTIMATION')
+		)
+

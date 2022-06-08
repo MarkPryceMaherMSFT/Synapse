@@ -9,21 +9,37 @@ evenly across all distributions.
 The assignment of rows to distributions is random. 
 Unlike hash-distributed tables, rows with equal values are not 
 guaranteed to be assigned to the same distribution.
-
 */
-
-
-
 /*
 drop table [dbo].[round_robin_test1] 
 
 truncate table [dbo].[round_robin_test1] 
 
 create table [dbo].[round_robin_test1]  
-with ( distribution = round_robin) as select * from supplier where 1=0
+with ( distribution = round_robin) as select * from customer where 1=0
 
-insert into [dbo].[round_robin_test1] select top 139 * from supplier
+--- Shhhh - its really 60 tables.
+select object_id, * from sys.tables where name like '%round_robin_test1%'
+
+select * from   sys.pdw_table_mappings where object_id in (select object_id from sys.tables where name like '%round_robin_test1%')
+
+insert into [dbo].[round_robin_test1] select top 121 * from customer
+
+truncate table [dbo].[round_robin_test1] 
+
+insert into [dbo].[round_robin_test1] select top 500  * from customer
+
+truncate table [dbo].[round_robin_test1] 
+
+print  60 * 121
+-- 60 * 74 = 7260
+
+insert into [dbo].[round_robin_test1] select top 7260  * from customer
+truncate table [dbo].[round_robin_test1] 
+
+insert into [dbo].[round_robin_test1] select top (7260 + 121)  * from supplier
 */
+
 
 SELECT
     [Entity Name]                   = QUOTENAME(s.name) + '.' + QUOTENAME(t.name),

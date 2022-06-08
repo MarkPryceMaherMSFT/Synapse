@@ -15,8 +15,25 @@ JOIN    sys.databases                     AS db ON ds.database_id = db.database_
 ;
 
 -- How many nodes....
-select * from sys.dm_pdw_nodes;
-select * from sys.dm_pdw_dms_cores;
+select * from sys.dm_pdw_nodes; -- DWU100 to DWU400
+
+/*
+DWU100-400
+5	CONTROL	DB.5	NULL	0	NULL
+5	COMPUTE	DB.5	NULL	0	NULL
+
+
+26	CONTROL	DB.26	NULL	0	NULL
+10	COMPUTE	DB.10	NULL	0	NULL
+
+26	CONTROL	DB.26	NULL	0	NULL
+10	COMPUTE	DB.10	NULL	0	NULL
+17	COMPUTE	DB.17	NULL	0	NULL
+
+
+*/
+
+
 
 -- distributions
  select * from   sys.pdw_distributions
@@ -51,8 +68,9 @@ select * from sys.dm_pdw_dms_external_work;
  -- real name for each table
  select * from   sys.pdw_table_mappings 
 
+
  -- view 
- select * from  sys.pdw_nodes_tables order by object_id
+ select * from  sys.pdw_nodes_tables 
 
  --
  select * from   sys.dm_pdw_nodes_db_partition_stats

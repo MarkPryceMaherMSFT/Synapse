@@ -1,11 +1,28 @@
 
 
---https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview
---create proc gettbldetails @tblname varchar(255)
---as
---begin
 
-SELECT
+--https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview
+--create PROC [dbo].[sp_tda_table_gather] AS
+
+IF OBJECT_ID('dbo.tda_table_history') IS NOT NULL
+  BEGIN;
+	
+	IF OBJECT_ID('dbo.tda_table') IS NOT NULL
+		BEGIN;
+			INSERT INTO dbo.tda_table_history
+				SELECT * FROM dbo.tda_table 
+		END;
+  END;
+
+IF OBJECT_ID('dbo.tda_table') IS NOT NULL
+  BEGIN;
+	DROP TABLE dbo.tda_table;
+  END;
+
+Create table dbo.tda_table
+WITH ( DISTRIBUTION = ROUND_ROBIN, heap) 
+AS 
+SELECT  getdate() as loaddate,
     [Fully Entity Name]                 = t.full_entity_name,
     [Schema Name]                       = t.schema_name,
     [Entity Name]                       = t.entity_name,
@@ -104,18 +121,21 @@ FROM
             AND cdp.column_id = c.column_id
     WHERE
         pn.type = 'COMPUTE'
-		 
-) AS t 
---where t.full_entity_name like @tblname
+) AS t
 GROUP BY
     t.full_entity_name,
     t.schema_name,
     t.entity_name,
     t.distribution_method,
     t.distribution_column,
-    t.standard_deviation
---end 
---order by [Skew Percentage] desc
+    t.standard_deviation;
 
-/*insert into dbo.supplier 
-select * from [dbo].[supplier_loadF7F0AA4F-7A4C-4AF5-BF55-6AE780E61BAA];*/
+	
+IF OBJECT_ID('dbo.tda_table_history') IS  NULL
+  BEGIN;
+	CREATE TABLE dbo.tda_table_history with (distribution= round_robin, heap) as
+		SELECT * FROM dbo.tda where 1=0;
+  END;
+
+
+

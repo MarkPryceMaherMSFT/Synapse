@@ -1,10 +1,11 @@
 /*
 Links:
 
+-- Samples
 https://github.com/microsoft/Azure_Synapse_Toolbox
-
 https://github.com/microsoft/sql-data-warehouse-samples
 
+--loading
 https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/data-loading-best-practices#:~:text=%20Best%20practices%20for%20loading%20data%20into%20a,the%20fastest%20loading%20speed%20for%20moving...%20More%20
 https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview
 
@@ -15,5 +16,13 @@ https://docs.microsoft.com/en-us/sql/relational-databases/system-functions/sys-f
 https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-portal
 
 https://azure.github.io/Synapse-Success-By-Design/
+
+https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-statistics
+
+https://docs.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver15#examples--and
+
+-- security
+https://docs.microsoft.com/en-us/security/benchmark/azure/baselines/synapse-analytics-security-baseline
+
 
 */

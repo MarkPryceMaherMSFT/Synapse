@@ -11,7 +11,9 @@ select 'a very very very very very very very very very very very very very very 
 select * from sys.dm_pdw_exec_requests where [label] = 'test'
 
 -- Show the length of the SQL commands
-select command,command2, len(command) command_length, len(command2) command2_length from sys.dm_pdw_exec_requests where [label] = 'test'
+select command,command2, len(command) command_length, len(command2) command2_length
+from sys.dm_pdw_exec_requests where [label] = 'test'
+
 
 
 -- drop view dbo.dm_pdw_exec_request2
@@ -21,12 +23,14 @@ select isnull(command2,command) full_cmd , * from sys.dm_pdw_exec_requests where
 -- Show the full query string
 select * from dbo.dm_pdw_exec_request2;
 
-QID6157346
-QID6157341
+
+
 
 ---- You've gonna need a bigger boat. These DMV's are are still 4000 characters.
-select *, len(command) as sql_len from sys.dm_pdw_request_steps where request_id = 'QID6157346'
-select *, len(command) as sql_len from sys.dm_pdw_sql_requests where  request_id = 'QID6157346'
+select *, len(command) as sql_len from sys.dm_pdw_request_steps 
+where request_id = 'QID6364426'
+select *, len(command) as sql_len from sys.dm_pdw_sql_requests
+where  request_id = 'QID6364426'
 
 
 

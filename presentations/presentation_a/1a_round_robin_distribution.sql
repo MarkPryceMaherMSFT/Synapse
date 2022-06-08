@@ -1,6 +1,12 @@
 --https://github.com/Microsoft/sql-data-warehouse-samples/blob/main/solutions/monitoring/scripts/views/microsoft.vw_table_sizes.sql
 -- Looking at LineItem a "round_robin" distribute table
-
+/*
+A round-robin distributed table distributes table rows 
+evenly across all distributions. 
+The assignment of rows to distributions is random. 
+Unlike hash-distributed tables, rows with equal values are not 
+guaranteed to be assigned to the same distribution.
+*/
 -- max: 100,025,062
 -- min:  99,980,262
 -- difference : 44,800
@@ -66,14 +72,23 @@ from
         ON cdp.object_id = c.object_id
         AND cdp.column_id = c.column_id
 WHERE  QUOTENAME(s.name) + '.' + QUOTENAME(t.name)  
--- = '[dbo].[round_robin_test1]' 
-= '[dbo].[lineitem]'
+ --= '[dbo].[round_robin_test1]' 
+ = '[dbo].[streaming_tbl]'
+--= '[dbo].[lineitem]'
+--= '[dbo].[lineitemD915695D-D437-4576-A90F-D40743C10FB8]'
 and
     pn.type = 'COMPUTE'
 	order by nps.row_count desc;
 
 
 /*
-Max : 100025062
-Min : 99980262
+Max : 16668190
+Min : 16665246
+Variance: 2944 rows
+
+print 16668190 - 16665246
+
+*/
+/*
+
 */

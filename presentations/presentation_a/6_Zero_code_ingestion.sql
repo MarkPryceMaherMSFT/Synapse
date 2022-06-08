@@ -37,23 +37,23 @@ GO
 
 create master key;
 
-CREATE DATABASE SCOPED CREDENTIAL sak
-WITH IDENTITY = 'sak'
+CREATE DATABASE SCOPED CREDENTIAL saknew
+WITH IDENTITY = 'saknew'
      , SECRET = 'shhhhh.....' 
 
-CREATE EXTERNAL DATA SOURCE [AzureDataLakeStore] WITH 
-(LOCATION = N'wasbs://streaming@.....blob.core.windows.net',
-CREDENTIAL = [sak])
+CREATE EXTERNAL DATA SOURCE [AzureDataLakeStoreNew] WITH 
+(LOCATION = N'wasbs://streaming@csesynapseworkspace.blob.core.windows.net',
+CREDENTIAL = [saknew])
 GO
 drop EXTERNAL TABLE cust119_test
-CREATE EXTERNAL TABLE cust119_test
+CREATE EXTERNAL TABLE cust1122_test
 WITH (
-    LOCATION = 'cluster1/logs/2021-10-30',
-    DATA_SOURCE = [AzureDataLakeStore],  
+    LOCATION = 'cluster1/logs/2021-11-19/',
+    DATA_SOURCE = [AzureDataLakeStoreNew] ,
     FILE_FORMAT = [CSV2]
 )  
 AS
-SELECT top 1000000 * from [dbo].[customer]
+SELECT  * from [dbo].[customer]
 print getdate()
 */
 -- CUSTOMER, dwu1000 (2 nodes smallrc)
@@ -62,9 +62,6 @@ print getdate()
 
 --select count_big(*)  FROM  [dbo].[streaming_customer_test];
 
--- 59736
--- 92441
--- 153442
 /*
 delete FROM [dbo].[streaming_customer_bulk]
 delete FROM  [dbo].[streaming_customer_test]
@@ -73,7 +70,12 @@ delete FROM  [dbo].[streaming_customer_test]
 select count(*)  FROM  [dbo].[streaming_customer_test]
 select count(*)  FROM  [dbo].[streaming_customer_bulk]
 
-select * from sys.dm_pdw_exec_requests order by submit_time desc;
+25641212
+22116302
+150,000,000
+select * from sys.dm_pdw_exec_requests
+where command like 'COPY%' or command like 'insert%' 
+order by submit_time desc;
 */
 /*
 --drop table [dbo].[streaming_customer_copy_into]

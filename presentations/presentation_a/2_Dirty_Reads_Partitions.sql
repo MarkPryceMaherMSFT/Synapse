@@ -1,6 +1,7 @@
 -- Scripts  to swap data between tables.
 
--- Thanks to Ron for this ideas : https://www.linkedin.com/pulse/ctas-alter-switch-vs-drop-rename-ron-dunn/
+-- Thanks to Ron for this ideas : 
+https://www.linkedin.com/pulse/ctas-alter-switch-vs-drop-rename-ron-dunn/
 
 -- 3 Different options
 -- Option 1 : Enable READ COMMITTED SNAPSHOT ISOLATION  https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-set-options?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true
@@ -81,7 +82,8 @@ insert into dbo.my_staging_table values (3,'peter');
 --select count(*) from dbo.my_table;
 
 -- copy the data from table dbo.my_staging_table to  dbo.my_table 
-ALTER TABLE dbo.my_staging_table SWITCH TO  dbo.my_table  with (truncate_target=on);
+ALTER TABLE dbo.my_staging_table SWITCH TO  
+dbo.my_table  with (truncate_target=on);
 
 -- see the results
 select * from dbo.my_staging_table ;
